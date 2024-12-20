@@ -35,8 +35,6 @@ BEGIN
     OUTPUT the result
 END
 
----
-
 ### Example
 
 **Approximate \( \pi \) using this method.**  
@@ -53,7 +51,8 @@ f(x, y) =
 The desired area (of the quarter-circle) is proportional to \( \pi r^2 \). Use a square of side \( 2r \) as the bounding region.  
 
 ###### Ans: [In C](./monte_carlo_integration/example.c)
----
 
 ### Further Reading 
 [Monte Carlo Integration](https://cs.dartmouth.edu/~wjarosz/publications/dissertation/appendixA.pdf)
+
+---
