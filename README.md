@@ -28,7 +28,7 @@ By the **law of large numbers**, the computed value converges to the true value 
 2. **REPEAT**
 3. Generate N random points in the bounding region
 4. Count the fraction <code>r</code> of points inside the target region
-5. Compute the integral approximation: <br><coder * (area of bounding region)</code>
+5. Compute the integral approximation: <br><code>r * (area of bounding region)</code>
 6. **UNTIL** error is within error bars
 7. **OUTPUT** the result
 8. **END**
