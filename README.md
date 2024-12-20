@@ -13,16 +13,14 @@ Here, we looking at the most basic form of Monte Carlo integration with **unifor
 
 ### Basic Idea  
 
-The key idea is to bound the desired integral (an area in \( \mathbb{R}^2 \)) within a region whose area is easy to compute. 
-1. Treat the bounding region as the sample space
-2. Sample \( N \) points uniformly within sample space
-3. Count the fraction \( r \) of points that fall inside the desired integral's region
+The key idea is to bound the desired integral (an area in <code>&#x211D;<sup>2</sup></code>) within a region whose area is easy to compute. 
+1. Treat the bounding region as the sample space  
+2. Sample <code>N</code> points uniformly within the sample space  
+3. Count the fraction <code>r</code> of points that fall inside the desired integral's region  
 4. Compute the desired area/integral using the formula:  
-\[
-\text{Approximation} = r \cdot (\text{area of bounding region})
-\]
+   <br><code>Approximation = r * (area of bounding region)</code>
 
-By the **law of large numbers**, the computed value converges to the true value as \( N \) increases. The error decreases proportionally to \( \frac{1}{\sqrt{N}} \), which can be derived easily.
+By the **law of large numbers**, the computed value converges to the true value as <code>N</code> increases. The error decreases proportionally to <code>1 / sqrt(N)</code>, which can be derived easily.
 
 ### Pseudocode  
 
