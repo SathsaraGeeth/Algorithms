@@ -12,6 +12,7 @@ int is_in_unit_circle(struct point p);
 struct point a_random_point_in_bounded_square();
 
 int main() {
+    srand(time(NULL)); // seed with current time
     int no_samples = 10000;
     double pi_val = pi(no_samples);
     printf("Approximated value of pi with %d number of uniform samples: %f\n", no_samples, pi_val);
